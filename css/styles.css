@@ -259,9 +259,6 @@ address {
   width: calc((100% - 72px) / 4);
 }
 
-.goal-menu-item {
-}
-
 .goal-box {
   border: 1px solid #8e8f99;
   border-radius: 4px;
@@ -365,19 +362,14 @@ address {
   height: 40px;
   border-radius: 50%;
   background-color: #4d5ae5;
-  fill: #31d0aa;
+  /* fill: #31d0aa; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #f4f4fd;
 }
 
 .teal-icon-svg:hover,
 .teal-icon-svg:focus {
   background-color: #404bbf;
-}
-
-.teal-svg {
-  fill: #f4f4fd;
-  width: 16px;
-  height: 16px;
 }
 
 /* Portfolio */
@@ -398,6 +390,7 @@ address {
   display: flex;
   gap: 48px 24px;
   flex-wrap: wrap;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-list:hover {
@@ -538,6 +531,7 @@ address {
   border-radius: 50%;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #f4f4fd;
 }
 
 .page-icon-link:focus,
@@ -548,10 +542,4 @@ address {
 .footer-container {
   display: flex;
   align-items: baseline;
-}
-
-.page-svg {
-  fill: #f4f4fd;
-  width: 24px;
-  height: 24px;
 }
