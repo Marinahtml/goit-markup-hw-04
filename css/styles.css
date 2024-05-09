@@ -301,23 +301,23 @@ address {
   margin-bottom: 72px;
 }
 
-.teal-menu {
+.team-menu {
   display: flex;
   gap: 24px;
 }
 
-.teal-list {
+.team-list {
   background: #ffffff;
   width: calc((100% - 72px) / 4);
 }
 
-.teal-img {
+.team-img {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
 
-.teal-item {
+.team-item {
   display: block;
 }
 
@@ -328,7 +328,7 @@ address {
   gap: 24px;
 }
 
-.teal-list-title {
+.team-list-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -338,7 +338,7 @@ address {
   margin-bottom: 8px;
 }
 
-.teal-text {
+.team-text {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -347,14 +347,14 @@ address {
   color: #434455;
 }
 
-.teal-icon {
+.team-icon {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-top: 8px;
 }
 
-.teal-icon-svg {
+.team-icon-svg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -364,14 +364,16 @@ address {
   background-color: #4d5ae5;
   /* fill: #31d0aa; */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #f4f4fd;
 }
 
-.teal-icon-svg:hover,
-.teal-icon-svg:focus {
+.team-icon-svg:hover,
+.team-icon-svg:focus {
   background-color: #404bbf;
 }
 
+.team-svg {
+  fill: #f4f4fd;
+}
 /* Portfolio */
 
 .portfolio-title {
@@ -393,13 +395,14 @@ address {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list:hover {
+.portfolio-link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-link {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-box {
@@ -450,13 +453,8 @@ address {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list {
-  display: block;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-list:hover .overlay-text,
-.portfolio-list:focus .overlay-text {
+.portfolio-link:hover .overlay-text,
+.portfolio-link:focus .overlay-text {
   transform: translateY(0);
 }
 
@@ -529,9 +527,8 @@ address {
   height: 100%;
   background-color: #4d5ae5;
   border-radius: 50%;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: #f4f4fd;
 }
 
 .page-icon-link:focus,
@@ -542,4 +539,8 @@ address {
 .footer-container {
   display: flex;
   align-items: baseline;
+}
+
+.page-svg {
+  fill: #f4f4fd;
 }
